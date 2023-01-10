@@ -4,15 +4,37 @@
   padding: 0;
   margin: 0;
 }
-html 
+
+header
 {
-  font-size: 62.5%;
-  font-family: 'Courgette', cursive;
+  width: 100%;
+  overflow:hidden;
+  background:#fefac0;
+  margin-bottom: 20px;
+ 
 }
 
-.A
+.wrapper
+{ 
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header .logo
 {
-  font-size: 3rem;
-  color: brown;
-  text-align: center;
+  font-size: 50px;
+  line-height: 35px;
+  float: left;
+}
+header .compras
+{
+  float: right;
+  line-height: 35px;
+}
+header .ventanas
+{
+  float: right;
+  line-height: 35px;
 }
