@@ -4,37 +4,59 @@
   padding: 0;
   margin: 0;
 }
+html 
+{
+  font-size: 62.5%;
+  
+}
 
 header
 {
-  width: 100%;
-  overflow:hidden;
-  background:#fefac0;
-  margin-bottom: 20px;
- 
-}
+  width: 100vw ;
+  height: 15vh;
+  background-color:#fefac0;
+  flex: flex;
 
-.wrapper
+}
+.compras 
+{
+  float:right;
+  margin:2rem;
+  font-size: 1.5rem;
+
+   
+}
+.servicios 
 { 
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
-}
+ padding:1rem;
+ background-color:#fefac0;
+ text-align: center;
+ flex-wrap: wrap;
+ border: 0.1rem solid rgba(195, 157, 18, 0.943); 
 
-header .logo
-{
-  font-size: 50px;
-  line-height: 35px;
-  float: left;
 }
-header .compras
+.serviciosR
 {
-  float: right;
-  line-height: 35px;
+ display:inline-block;  
 }
-header .ventanas
+.serviciosR a
 {
-  float: right;
-  line-height: 35px;
+  color:black;
+  padding: 1.5rem;
+  text-decoration:blue;
+  font-size: 1.7rem;
+  
+}
+.serviciosR a:hover
+{
+  color:blue;
+}
+.serviciosR a:active
+{
+  color:rgb(18, 106, 34);
+}
+.serviciosR a:after
+{
+  content:" | " ;
+  
 }
