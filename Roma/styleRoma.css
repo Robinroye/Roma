@@ -12,37 +12,52 @@ html
 
 header
 {
+  
+  display:flex;
   width: 100vw ;
-  height: 15vh;
+  height: 10vh;
   background-color:#fefac0;
-  flex: flex;
+  
 
 }
-.compras 
+
+.ayuda 
 {
-  float:right;
-  margin:2rem;
-  font-size: 1.5rem;
-
-   
+  position: relative;
+  padding: 1.5rem;
+  left: 87.5rem;
+  
+ 
 }
+
+.carrito
+{
+  position: relative;
+  padding: 1.5rem;
+  right: 10rem;
+  left: 87.5rem;
+}
+
+
 .servicios 
 { 
- padding:1rem;
- background-color:#fefac0;
- text-align: center;
- flex-wrap: wrap;
- border: 0.1rem solid rgba(195, 157, 18, 0.943); 
+  display:flex;
+  padding:1rem;
+  background-color:#fefac0;
+  justify-content: center;
+  border: 0.1rem solid rgba(195, 157, 18, 0.943); 
 
 }
+
 .serviciosR
 {
  display:inline-block;  
+
 }
 .serviciosR a
 {
   color:black;
-  padding: 1.5rem;
+  padding: 2rem;
   text-decoration:blue;
   font-size: 1.7rem;
   
