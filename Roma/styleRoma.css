@@ -15,7 +15,7 @@ header
   
   display:flex;
   width: 100vw ;
-  height: 10vh;
+  height: 12vh;
   background-color:#fefac0;
   
 
@@ -23,26 +23,25 @@ header
 
 .ayuda 
 {
-  position: relative;
+  position: absolute;
   padding: 1.5rem;
-  left: 87.5rem;
+  right: 12rem;
   
  
 }
 
 .carrito
 {
-  position: relative;
+  position:absolute;
   padding: 1.5rem;
-  right: 10rem;
-  left: 87.5rem;
+  right: 4rem;
 }
 
 
 .servicios 
 { 
   display:flex;
-  padding:1rem;
+  padding:0.5rem;
   background-color:#fefac0;
   justify-content: center;
   border: 0.1rem solid rgba(195, 157, 18, 0.943); 
@@ -51,13 +50,14 @@ header
 
 .serviciosR
 {
- display:inline-block;  
+ display:flex;  
 
 }
 .serviciosR a
 {
+  display: flex;
   color:black;
-  padding: 2rem;
+  padding: 0.5rem;
   text-decoration:blue;
   font-size: 1.7rem;
   
