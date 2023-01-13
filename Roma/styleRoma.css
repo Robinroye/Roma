@@ -36,7 +36,75 @@ header
   padding: 1.5rem;
   right: 4rem;
 }
+.buscador
+{
+  position: absolute;
+  left: 47%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
 
+
+}
+input
+{
+  outline: none;
+  box-sizing: border-box;
+  height: 4rem;
+  width: 0;
+  padding: 0 1.5rem;
+  color: black;
+  border-radius: 1rem;
+  font-size: 2rem;
+  border: 0.1rem solid black;
+  transition: all .7s ease;
+}
+
+::placeholder
+{
+  color: blue;
+
+}
+
+.btn
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6rem;
+  height: 6rem;
+  background: grey;
+  line-height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn i
+{
+  font-size: 3rem;
+  color: black;
+  line-height: 3rem;
+  transition: all .7 ease;
+
+}
+
+.buscador:hover input
+{
+  width: 40rem;
+
+}
+.container:hover i
+{
+  transform: rotate(-180deg);
+
+}
+.btn:hover
+{
+  background: green;
+
+}
 
 .servicios 
 { 
