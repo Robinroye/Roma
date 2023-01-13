@@ -1,0 +1,52 @@
+.ppage
+{
+    display:flex;
+    width: 100vw ;
+    height: 10vh;
+    background-color:#fefac0;
+    
+}
+.logoF
+{
+    position: relative;
+    padding: 0rem;
+    left: 27.5rem;
+}
+.direccion
+{
+    position: relative;
+    padding: 0rem;
+    left: 27.5rem;
+    
+}
+.pqr
+{
+    position: relative;
+    padding: 2rem;
+    right: 35rem;
+    
+}
+.bancolombia
+{
+    position: relative;
+    padding: 0rem;
+    left: 25.5rem;
+}
+.davinequi
+{
+    position: relative;
+    padding: 3rem;
+    left: 24rem;
+}
+.pse
+{
+    position: relative;
+    padding: 0rem;
+    left: 19.5rem;
+}
+.whatsapp
+{
+    position: relative;
+    padding: 3rem;
+    left: 19rem;
+}
