@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 html 
 {
@@ -36,75 +37,37 @@ header
   padding: 1.5rem;
   right: 4rem;
 }
-.buscador
+.conf
+{
+  font-family: "pt Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: -o-linear-gradient(#534f8a, #695be6);
+}
+.buscar
 {
   position: absolute;
-  left: 46%;
-  top: 6%;
-  transform: translate(-50%, -50%);
-  padding: 1.2rem;
+  padding: .5rem;
 
 
 }
-input
+.buscar input
 {
   outline: none;
   box-sizing: border-box;
-  height: 3rem;
-  width: 0;
-  padding: 1 1.5rem;
+  height: 4rem;
+  width: 24rem;
+  padding: 0 2rem;
   color: black;
-  border-radius: 1rem;
+  border-radius: 3rem;
   font-size: 2rem;
-  border: 0.1rem solid black;
+  border: 0.1rem solid silver;
   transition: all .7s ease;
 }
 
-::placeholder
-{
-  color: blue;
 
-}
-
-.btn
-{
-  position: absolute;
-  right: 0;
-  top:0.8rem;
-  width: 4rem;
-  height: 4rem;
-  background: grey;
-  line-height: 0;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  transition: .10s;
-}
-
-.btn i
-{
-  font-size: 1rem;
-  color: black;
-  line-height: 3rem;
-  transition: all .7 ease;
-
-}
-
-.buscador:hover input
-{
-  width: 40rem;
-
-}
-.container:hover i
-{
-  transform: rotate(-180deg);
-
-}
-.btn:hover
-{
-  background: green;
-
-}
 
 .servicios 
 { 
