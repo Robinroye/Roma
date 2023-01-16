@@ -37,36 +37,55 @@ header
   padding: 1.5rem;
   right: 4rem;
 }
-.conf
-{
-  font-family: "pt Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: -o-linear-gradient(#534f8a, #695be6);
-}
+
 .buscar
 {
   position: absolute;
-  padding: .5rem;
-
-
+  padding: 4rem;
+  right: 65rem;
 }
 .buscar input
 {
-  outline: none;
-  box-sizing: border-box;
+  width: 0;
   height: 4rem;
-  width: 24rem;
-  padding: 0 2rem;
+  padding: 0 0.9rem;
+  font-size: 1.8rem;
   color: black;
-  border-radius: 3rem;
-  font-size: 2rem;
+  outline:none;
   border: 0.1rem solid silver;
-  transition: all .7s ease;
-}
+  border-radius: 3rem;
+  transition: all 0.6s ease;
 
+
+
+}
+.btn
+{
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  background: silver;
+  text-align: center;
+  color:black;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  
+
+
+}
+.buscar:hover input
+{
+ width: 24rem; 
+
+}
+.buscar input:focus
+{
+  width: 24rem;
+}
 
 
 .servicios 
