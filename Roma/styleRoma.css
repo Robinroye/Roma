@@ -63,10 +63,10 @@ header
 {
   position: absolute;
   top: 2rem;
-  right: 1rem;
+  right: 1.5rem;
   width: 5.5rem;
   height: 5.5rem;
-  line-height: 5.5rem;
+  line-height: 7.2rem;
   background: silver;
   text-align: center;
   color:black;
@@ -74,17 +74,18 @@ header
   border-radius: 50%;
   cursor: pointer;
   
-
-
+  
+  
+  
 }
 .buscar:hover input
 {
- width: 24rem; 
+ width: 28rem; 
 
 }
-.buscar input:focus
+.btn:active 
 {
-  width: 24rem;
+  color:rgb(6, 67, 17);
 }
 
 
