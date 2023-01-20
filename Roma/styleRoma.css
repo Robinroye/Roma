@@ -21,7 +21,17 @@ header
   
 
 }
+header.header-logo
+{
+ width: 53rem;
+ margin: 0 auto;
+ margin-bottom: 3.5rem;
 
+}
+header .header-logo img
+{
+  width: 15rem;
+}
 .ayuda 
 {
   position: absolute;
@@ -38,8 +48,9 @@ header
   right: 4rem;
 }
 
-.buscar
+header .buscar
 {
+
   position: absolute;
   padding: 3rem;
   right: 65rem;
@@ -88,29 +99,34 @@ header
   color:rgb(6, 67, 17);
 }
 
-
-.servicios 
-{ 
-  display:flex;
-  padding:0.5rem;
-  background-color:#fefac0;
-  justify-content: center;
-  border: 0.1rem solid rgba(195, 157, 18, 0.943); 
-
-}
-
-.serviciosR
-{
- display:flex;  
-
-}
-.serviciosR a
+main nav
 {
   display: flex;
+  justify-content: center;
+  width: 100vw ;
+  height: 10vh;
+  background-color:#fefac0;
+  border: 0.1rem solid rgba(195, 157, 18, 0.943);
+}
+.servi
+{
+  width: auto;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.serviciosR a
+{
+ 
   color:black;
-  padding: 0.5rem;
+  margin-right: 1rem;
   text-decoration:blue;
-  font-size: 1.7rem;
+  font-size: 2rem;
   
 }
 .serviciosR a:hover
