@@ -50,51 +50,53 @@ header .header-logo img
 
 header .buscar
 {
-
-  position: absolute;
-  padding: 3rem;
-  right: 65rem;
+  width: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+ 
 }
-.buscar input
+header .buscar input
 {
-  width: 0rem;
+  width: 1rem;
   height: 4rem;
-  padding: 0 0.9rem;
+  padding: 0 1.8rem;
   font-size: 1.8rem;
   color: black;
-  outline:none;
-  border: 0.1rem solid silver;
+  border: 0.1rem groove silver;
   border-radius: 3rem;
   transition: all 0.6s ease;
+  outline: none;
+  background:gainsboro;
+  
 
 
+  
 
 }
-.btn
+header .buscar:hover input
 {
-  position: absolute;
-  top: 2rem;
-  right: 1.5rem;
-  width: 5.5rem;
-  height: 5.5rem;
-  line-height: 7.2rem;
-  background: silver;
+ width: 28rem; 
+ box-shadow: 0 1rem  1rem 0 #20212447;
+
+}
+header .btn
+{
+
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 6.2rem;
+  background:gainsboro;
   text-align: center;
   color:black;
   font-size: 1.5rem;
   border-radius: 50%;
   cursor: pointer;
   
-  
-  
-  
+ 
 }
-.buscar:hover input
-{
- width: 28rem; 
 
-}
-.btn:active 
+header .btn:active 
 {
   color:rgb(6, 67, 17);
 }
