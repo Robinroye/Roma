@@ -27,7 +27,7 @@ header.header-logo
 {
  width: 100%;
  margin: 0 auto;
- margin-bottom: 3.5rem;
+ 
 
 }
 header .header-logo img
@@ -173,7 +173,7 @@ main .navegation
 
 main .Roma
 {
-  
+ 
   width: 100vw ;
   height: 100vh;
   background-color:whitesmoke;
@@ -183,6 +183,8 @@ main .Roma
 }
 .titel
 {
+  position: absolute;
+  left: 3rem;
   font-size: 3rem;
   color: goldenrod;
 }
@@ -190,6 +192,7 @@ main .Roma
 {
   position: absolute;
   font-size: 1.5rem;
+  bottom: 1px;
   left: 20rem;
  
 }
