@@ -21,9 +21,11 @@ header
   
 
 }
+
+
 header.header-logo
 {
- width: 53rem;
+ width: 100%;
  margin: 0 auto;
  margin-bottom: 3.5rem;
 
@@ -36,24 +38,34 @@ header .header-logo img
 }
 header .header-help
 {
- 
-  width: 21rem;
-  align-self: center;
+width: auto;
+
+display: flex;
+padding: 0 3rem;
+align-items:center;
+
+  
  
   
 
 }
 .ayuda 
 {
-  display: inline-block;
-  margin-right: 7rem;
+  position: relative;
+  width: 100%;
+  right: 4rem;
+ 
+  
   
  
 }
 
 .carrito
 {
-  display: inline-block;
+  
+  width: 100%;
+  
+  
  
   
 }
@@ -61,7 +73,7 @@ header .header-help
 header .buscar
 {
   
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -87,13 +99,16 @@ header .buscar:hover input
 {
  width: 28rem; 
  box-shadow: 0 1rem  1rem 0 #20212447;
+ border: 0.2rem solid #c6c6c6;
+ color: #222;
 
 }
 header .buscar .btn
 {
-  
-  width: 4.5rem;
-  height: 4.5rem;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  right: 3.9rem;
   line-height: 6.2rem;
   background:gainsboro;
   background-size:contain;
@@ -101,6 +116,7 @@ header .buscar .btn
   color:black;
   font-size: 1.5rem;
   border-radius: 50%;
+  border: 0.2rem solid #c6c6c6;
   cursor: pointer;
   
   
@@ -109,23 +125,22 @@ header .buscar .btn
 
 header .btn:active 
 {
-  color:rgb(6, 67, 17);
+  color:rgb(5, 102, 23);
 }
 
-main nav
+main .navegation
 {
-  display: flex;
   justify-content: center;
   width: 100vw ;
-  height: 10vh;
+  height: auto;
   background-color:#fefac0;
   border: 0.1rem solid rgba(195, 157, 18, 0.943);
 }
 .servi
 {
-  width: auto;
-  height: auto;
   display: flex;
+  flex-wrap: wrap;
+  float: auto;
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -156,9 +171,9 @@ main nav
   
 }
 
-.Roma
+main .Roma
 {
-  display: flex;
+  
   width: 100vw ;
   height: 100vh;
   background-color:whitesmoke;
@@ -169,14 +184,12 @@ main nav
 .titel
 {
   font-size: 3rem;
-  padding: 2rem;
   color: goldenrod;
 }
 .resena
 {
   position: absolute;
   font-size: 1.5rem;
-  padding: 8rem;
   left: 20rem;
  
 }
