@@ -17,7 +17,7 @@ header
   display:flex;
   width: 100vw ;
   height: 13vh;
-  background-color:#fefac0;
+  background-color:#f7f6f6;
   
 
 }
@@ -26,15 +26,19 @@ header
 header.header-logo
 {
  width: 100%;
- margin: 0 auto;
+ height: auto;
  
+
 
 }
 header .header-logo img
 {
   
   width: 15rem;
- 
+  
+  justify-content:center;
+  align-items: center;
+  
 }
 header .header-help
 {
@@ -86,7 +90,7 @@ header .buscar input
   height: 4rem;
   padding: 0 1.8rem;
   font-size: 1.8rem;
-  color: black;
+  color: rgba(71, 54, 53, 0.601);
   border: 0.1rem groove silver;
   border-radius: 3rem;
   transition: all 0.6s ease;
@@ -133,8 +137,8 @@ main .navegation
   justify-content: center;
   width: 100vw ;
   height: auto;
-  background-color:#fefac0;
-  border: 0.1rem solid rgba(195, 157, 18, 0.943);
+  background-color:rgb(71, 68, 68);
+  border: 0.1rem solid #cfcfcf;
 }
 .servi
 {
@@ -144,18 +148,21 @@ main .navegation
   list-style: none;
   justify-content: center;
   align-items: center;
+  
 
 }
 
 
 .serviciosR a
 {
- 
-  color:black;
-  margin-right: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  color:white;
+  margin-right: 2rem;
   text-decoration:blue;
   font-size: 2rem;
-  
+ 
 }
 .serviciosR a:hover
 {
@@ -165,18 +172,14 @@ main .navegation
 {
   color:rgb(18, 106, 34);
 }
-.serviciosR a:after
-{
-  content:" | " ;
-  
-}
+
 
 main .Roma
 {
  
   width: 100vw ;
   height: 100vh;
-  background-color:whitesmoke;
+  background-color:white;
   
  
   
