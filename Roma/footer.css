@@ -22,23 +22,39 @@ footer .logoF
 {
     width: 100%;
     height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:  10px;
 }
 footer .logoF img
 {
     width: 12rem;
-    justify-content:center;
     align-items: center;
+    
+}
+.copyright
+{
+    color:gray;
     
 }
 .pagoSeguro
 {
     width: 100vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 2rem;
     
     
+}
+.whatsapp
+{
+position: fixed;
+bottom: 6rem;
+right: 2rem;
+
+
 }
