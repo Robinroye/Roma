@@ -20,7 +20,7 @@ footer
 }
 footer .logoF
 {
-    width: 100%;
+    width: 100vw;
     height: auto; 
     display: flex;
     justify-content: center;
@@ -40,13 +40,13 @@ footer .logoF img
 }
 .pagoSeguro
 {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2rem;
+  
     
     
 }

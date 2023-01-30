@@ -13,71 +13,27 @@ html
 
 header
 {
-  
-  display:flex;
+  display: flex;
   width: 100vw ;
-  height: 13vh;
+  height: auto;
   background-color:#f7f6f6;
   
-
 }
 
-
-header.header-logo
-{
- width: 100%;
- height: auto;
- 
-
-
-}
 header .header-logo img
 {
   
   width: 15rem;
-  
   justify-content:center;
   align-items: center;
   
 }
-header .header-help
-{
-width: auto;
 
-display: flex;
-padding: 0 3rem;
-align-items:center;
-
-  
- 
-  
-
-}
-.ayuda 
-{
-  position: relative;
-  width: 100%;
-  right: 4rem;
- 
-  
-  
- 
-}
-
-.carrito
-{
-  
-  width: 100%;
-  
-  
- 
-  
-}
 
 header .buscar
 {
   
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -131,17 +87,53 @@ header .btn:active
 {
   color:rgb(5, 102, 23);
 }
+header .header-help
+{
+  
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-around;
+  
+ 
 
+
+}
+
+.carrito
+{
+ padding: 3rem;
+  
+}
+
+.ayuda
+{
+ padding: 4rem;
+
+  
+}
+
+main
+{
+
+  width: 100vw ;
+  height:100vh;
+  background: white;
+ 
+}
 main .navegation
 {
-  justify-content: center;
-  width: 100vw ;
+  display: flex;
+  width: 100%;
   height: auto;
+  justify-content: center;
+  align-items: center;
   background-color:rgb(71, 68, 68);
   border: 0.1rem solid #cfcfcf;
 }
 .servi
 {
+  
   display: flex;
   flex-wrap: wrap;
   float: auto;
@@ -153,7 +145,6 @@ main .navegation
 
 .serviciosR a
 {
-  display: flex;
   justify-content: space-around;
   align-content: center;
   color:white;
@@ -172,28 +163,21 @@ main .navegation
 }
 
 
-main .Roma
+
+.publicity
 {
  
-  width: 100vw ;
-  height: 100vh;
+  display: flex;
+  width: 100%;
+  height: auto;
   background-color:white;
-  
- 
-  
+   
 }
 .titel
 {
-  position: absolute;
-  left: 3rem;
-  font-size: 3rem;
+  width: 100%;
+  height: 30vh;
+  background-color: silver;
+  font-size: 5rem;
   color: goldenrod;
-}
-.resena
-{
-  position: absolute;
-  font-size: 1.5rem;
-  bottom: 1px;
-  left: 20rem;
- 
 }
