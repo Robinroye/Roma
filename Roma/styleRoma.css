@@ -93,7 +93,7 @@ header .header-help
   display: flex;
   width: auto;
   align-items: center;
-  justify-content: space-around;
+  padding: 0 3rem;
   
  
 
@@ -102,15 +102,15 @@ header .header-help
 
 .carrito
 {
- padding: 3rem;
+ width: 100%;
   
 }
 
-.ayuda
+.ayudacd
 {
- padding: 4rem;
-
-  
+ position: relative;
+ width: 100%;
+ right: 4rem; 
 }
 
 main
