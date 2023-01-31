@@ -32,12 +32,10 @@ header .header-logo img
 
 header .buscar
 {
-  
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items:center;
-  
+  align-items:center;  
 }
 header .buscar input
 {
@@ -48,7 +46,7 @@ header .buscar input
   font-size: 1.8rem;
   color: rgba(71, 54, 53, 0.601);
   border: 0.1rem groove silver;
-  border-radius: 3rem;
+  border-radius: 2rem;
   transition: all 0.6s ease;
   outline: none;
   background:gainsboro;
@@ -110,7 +108,7 @@ header .header-help
 {
  position: relative;
  width: 100%;
- right: 4rem; 
+ right:6rem; 
 }
 
 main
