@@ -13,14 +13,14 @@ html
 footer
 { 
   display:flex;
-  width: 100vw ;
+  width: 100%;
   height: auto;
   background-color:#f7f6f6;
     
 }
 footer .logoF
 {
-    width: 100vw;
+    width: 100%;
     height: auto; 
     display: flex;
     justify-content: center;
@@ -41,11 +41,13 @@ footer .logoF img
 .pagoSeguro
 {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 3rem;
   
     
     
