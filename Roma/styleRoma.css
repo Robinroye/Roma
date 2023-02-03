@@ -77,10 +77,11 @@ header .buscar .btn
   border: 0.2rem solid #c6c6c6;
   cursor: pointer;
   
-  
- 
 }
-
+header .btn:hover 
+{
+  color:blue;
+}
 header .btn:active 
 {
   color:rgb(5, 102, 23);
@@ -109,6 +110,25 @@ header .header-help
  position: relative;
  width: 100%;
  right:6rem; 
+}
+header .carrito:hover
+{
+  color:blue
+}
+
+header .ayuda:hover
+{
+  color:blue
+}
+
+header .carrito:active
+{
+  color:green
+}
+
+header .ayuda:active
+{
+  color:green
 }
 
 main
