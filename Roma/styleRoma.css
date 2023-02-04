@@ -88,28 +88,12 @@ header .btn:active
 }
 header .header-help
 {
-  
   display: flex;
-  width: auto;
+  width: 20%;
+  height: auto;
   align-items: center;
-  padding: 0 3rem;
-  
- 
-
-
-}
-
-.carrito
-{
- width: 100%;
-  
-}
-
-.ayuda
-{
- position: relative;
- width: 100%;
- right:6rem; 
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 header .carrito:hover
 {
