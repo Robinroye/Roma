@@ -172,21 +172,21 @@ main .navegation
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:gray;
-  padding: 1rem;
+  background-color:papayawhip;
+  padding: 3rem;
    
 }
 .publicity img
 {
-  max-width: 300px;
+  max-width: 100%;
 }
 
-.containerAll
+.container-all
 {
   position: relative;
-  max-width: 300px;
-  width: auto;
-  border-radius: .6rem;
+  max-width: 40rem;
+  width: 100%;
+  border-radius: 1rem;
   overflow: hidden;
 }
 .slide
@@ -215,7 +215,7 @@ main .navegation
 .pagination
 {
   position: absolute;
-  bottom: 10px;
+  bottom: 2rem;
   left: 0;
   display: flex;
   flex-wrap: wrap;
@@ -229,14 +229,14 @@ main .navegation
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.2rem solid white;
+  border: 0.1rem solid white;
   width: 1.6rem;
   height: 1.6rem;
   border-radius: 0.4rem;
   overflow: hidden;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.5);
-  margin: 0 5px; 
+  margin: 0 1rem; 
   text-align: center;
   transition: all 300ms;
 }
@@ -265,7 +265,7 @@ main .navegation
 input [id="1"]:checked ~ .slide
 {
   animation: none;
-  transform: translate3d(0,0,0); 
+  transform: translate3d(0, 0, 0); 
 }
 
 input [id="1"]:checked ~ .pagination .pagination-item[for="1"]
@@ -276,12 +276,51 @@ input [id="1"]:checked ~ .pagination .pagination-item[for="1"]
 input [id="2"]:checked ~ .slide
 {
   animation: none;
-  transform: translate3d(calc (-100% * 1 )); 
+  transform: translate3d(calc (-100% * 1 ) 0, 0); 
 }
 
 input [id="2"]:checked ~ .pagination .pagination-item[for="2"]
 {
   background: #fff;
+}
+input [id="3"]:checked ~ .slide
+{
+  animation: none;
+  transform: translate3d(calc (-100% * 2 ) 0, 0); 
+}
+
+input [id="3"]:checked ~ .pagination .pagination-item[for="3"]
+{
+  background: #fff;
+}
+
+input [id="4"]:checked ~ .slide
+{
+  animation: none;
+  transform: translate3d(calc (-100% * 3 ) 0, 0); 
+}
+
+input [id="4"]:checked ~ .pagination .pagination-item[for="4"]
+{
+  background: #fff;
+}
+input [id="5"]:checked ~ .slide
+{
+  animation: none;
+  transform: translate3d(calc (-100% * 4 ) 0, 0); 
+}
+
+input [id="5"]:checked ~ .pagination .pagination-item[for="5"]
+{
+  background: #fff;
+}
+@keyframes autoplay
+{
+  20%{ transform: translate3d(calc(-100%*0), 0, 0)};
+  40%{ transform: translate3d(calc(-100%*1), 0, 0)};
+  60%{ transform: translate3d(calc(-100%*2), 0, 0)};
+  80%{ transform: translate3d(calc(-100%*3), 0, 0)};
+  100%{ transform: translate3d(calc(-100%*4), 0, 0)};
 }
 
 .tiel image
