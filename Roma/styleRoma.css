@@ -173,7 +173,10 @@ main .navegation
   align-items: center;
   justify-content: center;
   background-color:papayawhip;
-  padding: 3rem;
+  height: auto;
+
+  
+ 
    
 }
 .publicity img
@@ -204,24 +207,25 @@ main .navegation
 }
 .item-slide
 {
-  position: relative;
+  
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   flex-grow: 0;
   max-width: 100%;
+ 
 }
 
 .pagination
 {
-  position: absolute;
-  bottom: 2rem;
-  left: 0;
+
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 100%;
+  width:100%;
+  height: 2.5rem;
+  
 
 }
 .pagination-item
@@ -229,7 +233,7 @@ main .navegation
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.1rem solid white;
+  border: 0.1rem solid gray;
   width: 1.6rem;
   height: 1.6rem;
   border-radius: 0.4rem;
