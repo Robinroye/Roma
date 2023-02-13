@@ -5,6 +5,15 @@
   margin: 0;
   
 }
+:root
+{
+  --white:#ffffff;
+  --black:#000000;
+  --header-footer:#f7f6f6;
+  --papayawhip:#ffecd7;
+  --linkhover:#0c59cf;
+  --linkactive:#468847;
+}
 html 
 {
   font-size: 62.5%;
@@ -16,18 +25,14 @@ header
   display: flex;
   width: 100%;
   height: auto;
-  background-color:#f7f6f6;
-  
-  
+  background-color:var(--header-footer);
 }
 
 header .header-logo img
 {
-  
   width: 15rem;
   justify-content:center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 
@@ -51,8 +56,6 @@ header .buscar input
   transition: all 0.6s ease;
   outline: none;
   background:gainsboro;
- 
-
 }
 header .buscar:hover input
 {
@@ -81,11 +84,11 @@ header .buscar .btn
 }
 header .btn:hover 
 {
-  color:blue;
+  color:var(--linkhover);
 }
 header .btn:active 
 {
-  color:rgb(5, 102, 23);
+  color:var(--linkactive);
 }
 header .header-help
 {
@@ -98,22 +101,24 @@ header .header-help
 }
 header .carrito:hover
 {
-  color:blue
+  color:var(--linkhover);
+  cursor: pointer;
 }
 
 header .ayuda:hover
 {
-  color:blue
+  color:var(--linkhover);
+  cursor: pointer;
 }
 
 header .carrito:active
 {
-  color:green
+  color:var(--linkactive);
 }
 
 header .ayuda:active
 {
-  color:green
+  color:var(--linkactive);
 }
 
 main
@@ -121,7 +126,7 @@ main
 
   width: 100%;
   height:100vh;
-  background: white;
+  background:var(--white);
  
 }
 main .navegation
@@ -150,19 +155,19 @@ main .navegation
 {
   justify-content: space-around;
   align-content: center;
-  color:white;
+  color:var(--white);
   margin-right: 2rem;
-  text-decoration:blue;
+  text-decoration:var(--linkhover);
   font-size: 2rem;
  
 }
 .serviciosR a:hover
 {
-  color:blue;
+  color:var(--linkhover);
 }
 .serviciosR a:active
 {
-  color:rgb(18, 106, 34);
+  color:var(--linkactive);
 }
 
 
@@ -172,12 +177,8 @@ main .navegation
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:papayawhip;
-  height: auto;
-
-  
- 
-   
+  background-color:var(--papayawhip);
+  height: auto;  
 }
 .publicity img
 {
@@ -202,8 +203,6 @@ main .navegation
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
-
-
 }
 .item-slide
 {
@@ -213,7 +212,6 @@ main .navegation
   flex-shrink: 0;
   flex-grow: 0;
   max-width: 100%;
- 
 }
 
 .pagination
@@ -225,8 +223,6 @@ main .navegation
   justify-content: center;
   width:100%;
   height: 2.5rem;
-  
-
 }
 .pagination-item
 {
@@ -337,7 +333,7 @@ input [id="5"]:checked ~ .pagination .pagination-item[for="5"]
   display: flex;
   width: 100%;
   height: 40vh;
-  background-color:white;
+  background-color:var(--white);
 }
 
 .imgroma
@@ -346,7 +342,7 @@ input [id="5"]:checked ~ .pagination .pagination-item[for="5"]
   justify-content: center;
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: var(--white);
   font-size: 3rem;
   color:silver;
 
