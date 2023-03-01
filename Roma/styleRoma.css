@@ -170,63 +170,127 @@ main .navegation
   color:var(--linkactive);
 }
 
-.carrusel
-{
- width: 100%;
- max-width: 800px;
- margin: 0 auto;
- position: relative;
- background-color: var(--papayawhip);
-}
-.slides
+.publicity
 {
   display: flex;
-  width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  align-items: center;
+  justify-content: center;
+  background-color:gray;
+  padding: 1rem;
+   
+}
+.publicity img
+{
+  max-width: 300px;
 }
 
-.carrusel img
+.containerAll
 {
-  width: 100%;
-  height: auto;
-  scroll-snap-align: start;
+  position: relative;
+  max-width: 300px;
+  width: auto;
+  border-radius: .6rem;
+  overflow: hidden;
 }
-.navigation
+.slide
+{
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  transition: all 600ms;
+  animation-name: autoplay;
+  animation-duration: 6.5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+
+
+}
+.item-slide
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.pagination
 {
   position: absolute;
-  width: 100%;
+  bottom: 10px;
+  left: 0;
   display: flex;
-  justify-content: space-between;
-  z-index: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
 }
-.prev, .next
+.pagination-item
 {
-  background: transparent;
-  border: none;
-  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2rem solid white;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
   cursor: pointer;
-  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 5px; 
+  text-align: center;
+  transition: all 300ms;
 }
-@media screen and (max-width:768px)
+.pagination-item:hover
 {
-  .slides
-  { 
-    scroll-snap-type: none;
-    overflow-x: auto;
-  }
-
-  .carrusel img
-  {
-    width: 50%;
-    height: auto;
-    margin: 0 1rem;
-    scroll-snap-align: none;
-  }
+  transform: scale(2);
 }
 
+.pagination-item img
+{
+  display: inline-block;
+  max-width: none;
+  height: 100%;
+  transform: scale(1);
+  opacity: 0;
+  transition: all 300ms;
+
+}
+
+.pagination-item:hover img
+{
+  opacity: 1;
+  transform: scale(1);
+}
+
+input [id="1"]:checked ~ .slide
+{
+  animation: none;
+  transform: translate3d(0,0,0); 
+}
+
+input [id="1"]:checked ~ .pagination .pagination-item[for="1"]
+{
+  background: #fff;
+}
+
+input [id="2"]:checked ~ .slide
+{
+  animation: none;
+  transform: translate3d(calc (-100% * 1 )); 
+}
+
+input [id="2"]:checked ~ .pagination .pagination-item[for="2"]
+{
+  background: #fff;
+}
+
+.tiel image
+{
+  width: 50rem;
+}
 .pngima
 {
   display: flex;
