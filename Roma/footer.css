@@ -10,12 +10,21 @@ html
   font-size: 62.5%;
   
 }
+:root
+{
+  --white:#ffffff;
+  --black:#000000;
+  --header-footer:#f7f6f6;
+  --papayawhip:#ffecd7;
+  --linkhover:#0c59cf;
+  --linkactive:#468847;
+}
 footer
 { 
   display:flex;
   width: 100%;
   height: auto;
-  background-color:#f7f6f6;
+  background-color:var(--header-footer)
     
 }
 footer .logoF
@@ -36,6 +45,7 @@ footer .logoF img
 .copyright
 {
     color:gray;
+
     
 }
 .pagoSeguro
@@ -60,3 +70,28 @@ right: 2rem;
 
 
 }
+@media(max-width: 600px)
+{
+  .copyright
+  {
+    display: block;
+    align-content: center;
+    align-items: flex flex-end;
+    font-size: 8px;
+
+  }
+  .pagoSeguro
+  {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+}
+
+
+
