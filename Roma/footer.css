@@ -91,6 +91,10 @@ right: 2rem;
     flex-wrap: wrap;
     padding: 1rem;
   }
+  .bancolombia, .davinequi
+  {
+    display: none;
+  }
 }
 
 
