@@ -150,7 +150,6 @@ main .navegation
   align-items: center;
 }
 
-
 .serviciosR a
 {
   justify-content: space-around;
@@ -184,14 +183,7 @@ main .navegation
   max-width: 300px;
 }
 
-.containerAll
-{
-  position: relative;
-  max-width: 300px;
-  width: auto;
-  border-radius: .6rem;
-  overflow: hidden;
-}
+
 .slide
 {
   display: flex;
@@ -227,70 +219,7 @@ main .navegation
   width: 100%;
 
 }
-.pagination-item
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 0.2rem solid white;
-  width: 1.6rem;
-  height: 1.6rem;
-  border-radius: 0.4rem;
-  overflow: hidden;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.5);
-  margin: 0 5px; 
-  text-align: center;
-  transition: all 300ms;
-}
-.pagination-item:hover
-{
-  transform: scale(2);
-}
 
-.pagination-item img
-{
-  display: inline-block;
-  max-width: none;
-  height: 100%;
-  transform: scale(1);
-  opacity: 0;
-  transition: all 300ms;
-
-}
-
-.pagination-item:hover img
-{
-  opacity: 1;
-  transform: scale(1);
-}
-
-input [id="1"]:checked ~ .slide
-{
-  animation: none;
-  transform: translate3d(0,0,0); 
-}
-
-input [id="1"]:checked ~ .pagination .pagination-item[for="1"]
-{
-  background: #fff;
-}
-
-input [id="2"]:checked ~ .slide
-{
-  animation: none;
-  transform: translate3d(calc (-100% * 1 )); 
-}
-
-input [id="2"]:checked ~ .pagination .pagination-item[for="2"]
-{
-  background: #fff;
-}
-
-.tiel image
-{
-  width: 50rem;
-}
 .pngima
 {
   display: flex;
