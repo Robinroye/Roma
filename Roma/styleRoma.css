@@ -38,7 +38,7 @@ header .header-logo img
 
 header .buscar
 {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items:center;  
@@ -125,7 +125,7 @@ main
 {
 
   width: 100%;
-  height:100vh;
+  height:auto;
   background:var(--white);
  
 }
@@ -184,19 +184,6 @@ main .navegation
 }
 
 
-.slide
-{
-  display: flex;
-  transform: translate3d(0, 0, 0);
-  transition: all 600ms;
-  animation-name: autoplay;
-  animation-duration: 6.5s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-
-
-}
 .item-slide
 {
   position: relative;
@@ -220,22 +207,8 @@ main .navegation
 
 }
 
-.pngima
-{
-  display: flex;
-  width: 100%;
-  height: 40vh;
-  background-color:var(--white);
-}
 
-.imgroma
+.container img
 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background-color: var(--white);
-  font-size: 3rem;
-  color:silver;
-
+  max-width: 300px;
 }
