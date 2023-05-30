@@ -13,6 +13,11 @@
   --papayawhip:#ffecd7;
   --linkhover:#0c59cf;
   --linkactive:#468847;
+  --purple-dark:#170312;
+  --purple-medium:#33032D;
+  --purple-light:#531253;
+  --gray-light:#eaeaea;
+  --white:#f4fffd; 
 }
 html 
 {
@@ -41,7 +46,8 @@ header .buscar
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items:center;  
+  align-items:center;
+  background-image: linear-gradient(-225deg, #08f9b1 0%, #f10cc4 100%);  
 }
 header .buscar input
 {
@@ -127,7 +133,15 @@ main
   width: 100%;
   height:auto;
   background:var(--white);
+  font-size: 20px;
+  font-family: open sans;
+  padding: 1rem;
  
+}
+
+main img
+{
+  max-width: 300px;
 }
 main .navegation
 {
@@ -176,7 +190,7 @@ main .navegation
   justify-content: center;
   background-color:gray;
   padding: 1rem;
-   
+   overflow-x: scroll;
 }
 .publicity img
 {
@@ -207,8 +221,7 @@ main .navegation
 
 }
 
-
-.container img
+p 
 {
-  max-width: 300px;
+  font-size: 22px;
 }
